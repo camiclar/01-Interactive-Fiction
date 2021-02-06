@@ -1,0 +1,193 @@
+{
+    "passages": [
+      {
+        "text": "You wake up in a dark, cramped cell, unsure how long you've been there. As you sit up and place your feet on the stone floor, you hear clanking sounds coming from the hallway outside your cell. A guard is sliding a plate through the bars, containing half a loaf of stale, moldy bread and a mug of water.\n\n[[Go back to sleep->A Rude Awakening]]\n[[Eat the food->A key?]]\n[[Yell for help->No justice]]",
+        "links": [
+          {
+            "name": "Go back to sleep",
+            "link": "A Rude Awakening",
+            "pid": "2"
+          },
+          {
+            "name": "Eat the food",
+            "link": "A key?",
+            "pid": "3"
+          },
+          {
+            "name": "Yell for help",
+            "link": "No justice",
+            "pid": "4"
+          }
+        ],
+        "name": "Dungeon",
+        "pid": "1",
+        "position": {
+          "x": "405",
+          "y": "171"
+        }
+      },
+      {
+        "text": "You wake up to a hunger pang. You realize you can't remember the last time you ate. The moldy bread and water are still by the entrance to your cell. It's not ideal, but surely eating anything at this point is better than starving, right?\n\n[[Eat the food->A key?]]\n[[Yell for help->No justice]]\n[[Go back to sleep->A Rude Awakening]] ",
+        "links": [
+          {
+            "name": "Eat the food",
+            "link": "A key?",
+            "pid": "3"
+          },
+          {
+            "name": "Yell for help",
+            "link": "No justice",
+            "pid": "4"
+          },
+          {
+            "name": "Go back to sleep",
+            "link": "A Rude Awakening",
+            "pid": "2"
+          }
+        ],
+        "name": "A Rude Awakening",
+        "pid": "2",
+        "position": {
+          "x": "255",
+          "y": "319"
+        }
+      },
+      {
+        "text": "You tear off a chunk of the bread, eager to finally have something to eat. A few bites in, you notice what appears to be a piece of metal lodged inside the loaf. Upon investigating further, you realize that it's a key. Someone on the outside wants to help you escape!\n\n[[Plan your escape->Key to freedom]]\n[[Keep eating with the key inside the food->Passing the Time]]",
+        "links": [
+          {
+            "name": "Plan your escape",
+            "link": "Key to freedom",
+            "pid": "5"
+          },
+          {
+            "name": "Keep eating with the key inside the food",
+            "link": "Passing the Time",
+            "pid": "6"
+          }
+        ],
+        "name": "A key?",
+        "pid": "3",
+        "position": {
+          "x": "404",
+          "y": "321"
+        }
+      },
+      {
+        "text": "You yell to the guard to help you, asking him where you are and how you got there. The guard only hollars that you need to quiet down and be grateful that he brought you food.\n\n[[Eat the food->A key?]] \n[[Go back to sleep->A Rude Awakening]] ",
+        "links": [
+          {
+            "name": "Eat the food",
+            "link": "A key?",
+            "pid": "3"
+          },
+          {
+            "name": "Go back to sleep",
+            "link": "A Rude Awakening",
+            "pid": "2"
+          }
+        ],
+        "name": "No justice",
+        "pid": "4",
+        "position": {
+          "x": "555",
+          "y": "321"
+        }
+      },
+      {
+        "text": "You carefully peer outside your cell and see what looks like the shadow of a guard standing around a corner.\n\n[[Make your escape->Caught!]]\n[[Wait until the coast is clear, then make your escape->Out of the Frying Pan]]",
+        "links": [
+          {
+            "name": "Make your escape",
+            "link": "Caught!",
+            "pid": "8"
+          },
+          {
+            "name": "Wait until the coast is clear, then make your escape",
+            "link": "Out of the Frying Pan",
+            "pid": "9"
+          }
+        ],
+        "name": "Key to freedom",
+        "pid": "5",
+        "position": {
+          "x": "329",
+          "y": "471"
+        }
+      },
+      {
+        "text": "You've never been a picky eater, and this is no exception. You swallow the key alongside the bread and wash it all down with water.\n\nThe next few days go by normally, until it comes time to pass the key. It's a gruelling process, but eventually the key is once again on the floor in front of you, albeit a bit less clean than before.\n\n[[Leave it->Was it worth it?]]\n[[Plan your escape->Key to freedom]]",
+        "links": [
+          {
+            "name": "Leave it",
+            "link": "Was it worth it?",
+            "pid": "7"
+          },
+          {
+            "name": "Plan your escape",
+            "link": "Key to freedom",
+            "pid": "5"
+          }
+        ],
+        "name": "Passing the Time",
+        "pid": "6",
+        "position": {
+          "x": "480",
+          "y": "470"
+        }
+      },
+      {
+        "text": "The next day, a guard notices the key on the floor in your cell. He examined the key, tested it on your cell door, and confirmed that it did unlock your cell. You are accused of attempting to escape, and executed soon after.\n\nYou lose!\n\n[[Try again->Dungeon]] ",
+        "links": [
+          {
+            "name": "Try again",
+            "link": "Dungeon",
+            "pid": "1"
+          }
+        ],
+        "name": "Was it worth it?",
+        "pid": "7",
+        "position": {
+          "x": "480",
+          "y": "619"
+        }
+      },
+      {
+        "text": "You haven't even left the cell before the guard is alerted to your attempted escape. He locks you back in your cell, and you are executed for your crimes shortly after.\n\nYou lose!\n\n[[Try again->Dungeon]]",
+        "links": [
+          {
+            "name": "Try again",
+            "link": "Dungeon",
+            "pid": "1"
+          }
+        ],
+        "name": "Caught!",
+        "pid": "8",
+        "position": {
+          "x": "254",
+          "y": "621"
+        }
+      },
+      {
+        "text": "You wait for the opportune time to escape and find it in a short gap between the guards' shifts. You slip out of your cell undetected and make it out of the prison without attracting any unwanted attention.\n\nCongratulations! You win!\n\n[[Play again->Dungeon]] ",
+        "links": [
+          {
+            "name": "Play again",
+            "link": "Dungeon",
+            "pid": "1"
+          }
+        ],
+        "name": "Out of the Frying Pan",
+        "pid": "9",
+        "position": {
+          "x": "360",
+          "y": "621"
+        }
+      }
+    ],
+    "name": "Prison Escape",
+    "startnode": "1",
+    "creator": "Twine",
+    "creator-version": "2.3.11",
+    "ifid": "9D47DDE2-23BB-4A8A-9480-220B59F14EC0"
+  }
