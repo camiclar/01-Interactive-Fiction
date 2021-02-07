@@ -67,6 +67,7 @@
           }
         ],
         "name": "A key?",
+        "score": 5,
         "pid": "3",
         "position": {
           "x": "404",
@@ -95,7 +96,7 @@
         }
       },
       {
-        "text": "You carefully peer outside your cell and see what looks like the shadow of a guard standing around a corner.\n\n[[Make your escape->Caught!]]\n[[Wait until the coast is clear, then make your escape->Out of the Frying Pan]]",
+        "text": "You carefully peer outside your cell and see what looks like the shadow of a guard standing around a corner.\n\n[[Make your escape->Caught!]]\n[[Wait until the coast is clear then make your escape->Out of the Frying Pan]]",
         "links": [
           {
             "name": "Make your escape",
@@ -103,7 +104,7 @@
             "pid": "8"
           },
           {
-            "name": "Wait until the coast is clear, then make your escape",
+            "name": "Wait until the coast is clear then make your escape",
             "link": "Out of the Frying Pan",
             "pid": "9"
           }
@@ -137,7 +138,7 @@
         }
       },
       {
-        "text": "The next day, a guard notices the key on the floor in your cell. He examined the key, tested it on your cell door, and confirmed that it did unlock your cell. You are accused of attempting to escape, and executed soon after.\n\nYou lose!\n\n[[Try again->Dungeon]] ",
+        "text": "The next day, a guard notices the key on the floor in your cell. He examines the key, tests it on your cell door, and confirms that it did unlock your cell. You are accused of attempting to escape, and executed soon after.\n\nYou lose!\n\n[[Try again->Dungeon]] ",
         "links": [
           {
             "name": "Try again",
@@ -148,17 +149,22 @@
         "name": "Was it worth it?",
         "pid": "7",
         "position": {
-          "x": "480",
+          "x": "479",
           "y": "619"
         }
       },
       {
-        "text": "You haven't even left the cell before the guard is alerted to your attempted escape. He locks you back in your cell, and you are executed for your crimes shortly after.\n\nYou lose!\n\n[[Try again->Dungeon]]",
+        "text": "The lock clicks as you enter the key into it, and the door creaks open. Really loudly. The guard is alerted to your attempted escape and begins walking toward you. You only have a few seconds to react.\n\n[[Try talking your way out of it->Honeyed Words]]\n[[Hide->In the Shadows]]",
         "links": [
           {
-            "name": "Try again",
-            "link": "Dungeon",
-            "pid": "1"
+            "name": "Try talking your way out of it",
+            "link": "Honeyed Words",
+            "pid": "10"
+          },
+          {
+            "name": "Hide",
+            "link": "In the Shadows",
+            "pid": "11"
           }
         ],
         "name": "Caught!",
@@ -169,7 +175,381 @@
         }
       },
       {
-        "text": "You wait for the opportune time to escape and find it in a short gap between the guards' shifts. You slip out of your cell undetected and make it out of the prison without attracting any unwanted attention.\n\nCongratulations! You win!\n\n[[Play again->Dungeon]] ",
+        "text": "You wait for the opportune time to escape and find it in a short gap between the guards' shifts. You slip out of your cell undetected and take the door leading out of the dungeon without attracting any unwanted attention.\n\n[[Continue your escape->A Fork in the Road]] ",
+        "links": [
+          {
+            "name": "Continue your escape",
+            "link": "A Fork in the Road",
+            "pid": "12"
+          }
+        ],
+        "name": "Out of the Frying Pan",
+        "score": 10,
+        "pid": "9",
+        "position": {
+          "x": "360",
+          "y": "621"
+        }
+      },
+      {
+        "text": "The guard confronts you, asking you what you're doing outside your cell. He appears young and nervous, stumbling over his words a bit. It's your lucky day; the guard is new, and this may even be his first shift. \n\nThinking quickly, you point out that if his boss found out about this incident, he would get into trouble for not being able to keep watch over the prisoners. It would be best to look the other way and let someone else take the blame for the escaped prisoner.\n\nMiraculously, the guard nervously agrees and you continue your escape.\n\n[[Keep going->A Fork in the Road]]",
+        "links": [
+          {
+            "name": "Keep going",
+            "link": "A Fork in the Road",
+            "pid": "12"
+          }
+        ],
+        "name": "Honeyed Words",
+        "score": 10,
+        "pid": "10",
+        "position": {
+          "x": "310",
+          "y": "776"
+        }
+      },
+      {
+        "text": "You slip into the darkest corner of the dimly lit hallway, trying not to make a sound. The guard inspects your cell and realizes that it's empty, then begins looking around. You hold your breath as he gets closer and closer, until the two of you lock eyes.\n\n[[Try talking your way out of it->Honeyed Words]] \n[[Remain silent->Defeat!]]",
+        "links": [
+          {
+            "name": "Try talking your way out of it",
+            "link": "Honeyed Words",
+            "pid": "10"
+          },
+          {
+            "name": "Remain silent",
+            "link": "Defeat!",
+            "pid": "13"
+          }
+        ],
+        "name": "In the Shadows",
+        "pid": "11",
+        "position": {
+          "x": "465",
+          "y": "789"
+        }
+      },
+      {
+        "text": "You exit the dungeon to realize you are not free yet. In fact, your escape is only just beginning. \n\nOn the floor in front of you is a plush, red carpet. The walls around you are made of stone and feature large, elaborate paintings. You are in the middle of a castle, and there are bound to be guards everywhere.\n\nTo your left, there is a hallway lined with doors. To your right, a hallway leads to an archway that appears to open into a large room.\n\n[[Go left->Armory]]\n[[Go right->Banquet Hall]]",
+        "links": [
+          {
+            "name": "Go left",
+            "link": "Armory",
+            "pid": "14"
+          },
+          {
+            "name": "Go right",
+            "link": "Banquet Hall",
+            "pid": "15"
+          }
+        ],
+        "name": "A Fork in the Road",
+        "score": 20,
+        "pid": "12",
+        "position": {
+          "x": "301",
+          "y": "909"
+        }
+      },
+      {
+        "text": "The guard places you back in your cell and removes the key from your possession. Weeks go by with no more chances of escape. You are executed shortly after for your crimes.\n\nYou lose!\n\n[[Try again->Dungeon]] ",
+        "links": [
+          {
+            "name": "Try again",
+            "link": "Dungeon",
+            "pid": "1"
+          }
+        ],
+        "name": "Defeat!",
+        "pid": "13",
+        "position": {
+          "x": "473",
+          "y": "946"
+        }
+      },
+      {
+        "text": "You go to the left and enter the first door you see. Before you is a room full of armor, weapons, and training dummies. There is one guard in the room who appears to be training. She hasn't noticed you yet. There is a table in front of you with a set of guard's armor, a sword, and a shield.\n\n[[Disguise yourself as a guard with the items on the table->A little loose]]\n[[Go back->Hallway]]",
+        "links": [
+          {
+            "name": "Disguise yourself as a guard with the items on the table",
+            "link": "A little loose",
+            "pid": "16"
+          },
+          {
+            "name": "Go back",
+            "link": "Hallway",
+            "pid": "17"
+          }
+        ],
+        "name": "Armory",
+        "pid": "14",
+        "position": {
+          "x": "264",
+          "y": "1068"
+        }
+      },
+      {
+        "text": "You go to the right and approach the archway. Peering through, you see a massive room with a huge dining table in the middle. The table is lined with wooden chairs, with an extravagant throne at the head. In addition to the archway you are peering through, there are three doors in banquet hall: one to the left of the table, one to the right, and one behind it. You wonder where they go to, but each door has a guard standing on either side of it, so you best not investigate further.\n\n[[Go back->Hallway]]\n[[Enter the room->Spotted!]]",
+        "links": [
+          {
+            "name": "Go back",
+            "link": "Hallway",
+            "pid": "17"
+          },
+          {
+            "name": "Enter the room",
+            "link": "Spotted!",
+            "pid": "18"
+          }
+        ],
+        "name": "Banquet Hall",
+        "pid": "15",
+        "position": {
+          "x": "446",
+          "y": "1081"
+        }
+      },
+      {
+        "text": "The armor doesn't fit you quite right, but you at least look more like a guard than you do an escaped prisoner. You should be able to walk freely through the castle now, provided that you stay in character.\n\nThe guard in the armory continues to train, seemingly oblivious to your presence.\n\n[[Strike up conversation with the guard->A Fighting Chance]]\n[[Exit the armory->On Patrol]]",
+        "links": [
+          {
+            "name": "Strike up conversation with the guard",
+            "link": "A Fighting Chance",
+            "pid": "19"
+          },
+          {
+            "name": "Exit the armory",
+            "link": "On Patrol",
+            "pid": "20"
+          }
+        ],
+        "name": "A little loose",
+        "score": 20,
+        "pid": "16",
+        "position": {
+          "x": "156",
+          "y": "1240"
+        }
+      },
+      {
+        "text": "On the floor in front of you is a plush, red carpet. The walls around you are made of stone and feature large, elaborate paintings. You are in the middle of a castle, and there are bound to be guards everywhere.\n\nTo your left, there is a hallway lined with doors. To your right, a hallway leads to an archway that appears to open into a large room.\n\n[[Go left->Armory]]\n[[Go right->Banquet Hall]]",
+        "links": [
+          {
+            "name": "Go left",
+            "link": "Armory",
+            "pid": "14"
+          },
+          {
+            "name": "Go right",
+            "link": "Banquet Hall",
+            "pid": "15"
+          }
+        ],
+        "name": "Hallway",
+        "pid": "17",
+        "position": {
+          "x": "346",
+          "y": "1245"
+        }
+      },
+      {
+        "text": "You enter the banquet hall, and are immediately confronted by all six guards. They take no pity on you, and throw you back in your cell. You are executed for your crimes shortly after.\n\nYou lose!\n\n[[Try again->Dungeon]]",
+        "links": [
+          {
+            "name": "Try again",
+            "link": "Dungeon",
+            "pid": "1"
+          }
+        ],
+        "name": "Spotted!",
+        "pid": "18",
+        "position": {
+          "x": "540",
+          "y": "1249"
+        }
+      },
+      {
+        "text": "The guard seems startled as you begin talking, saying that she didn't hear you come in. After exchanging a few pleasantries, it seems as though she is convinced by your disguise. A little too convinced even. She asks you if you'd like to practice sparring with her, as she much prefers to practice with real people than with straw dummies.\n\n[[Accept invitation->Sparring Practice]]\n[[Reject invitation->Low Profile]]",
+        "links": [
+          {
+            "name": "Accept invitation",
+            "link": "Sparring Practice",
+            "pid": "21"
+          },
+          {
+            "name": "Reject invitation",
+            "link": "Low Profile",
+            "pid": "22"
+          }
+        ],
+        "name": "A Fighting Chance",
+        "pid": "19",
+        "position": {
+          "x": "154",
+          "y": "1389"
+        }
+      },
+      {
+        "text": "You exit the armory in your disguise and try your best to look like you know where you're going. Ahead of you is the archway leading into a large room.\n\n[[Go toward the archway->Fit for a King]]",
+        "links": [
+          {
+            "name": "Go toward the archway",
+            "link": "Fit for a King",
+            "pid": "25"
+          }
+        ],
+        "name": "On Patrol",
+        "pid": "20",
+        "position": {
+          "x": "445",
+          "y": "1401"
+        }
+      },
+      {
+        "text": "Never one to turn down a fight, you accept her invitation and draw your sword. Unfortunately, you very quickly realize that this guard is far more skilled with a blade than you are. You receive blow after blow, and just thank the heavans that she is using a dulled training sword rather than the real thing.\n\nAfter knocking you to the floor, she pauses and asks you if you are okay.\n\n[[Continue the fight->Red Handed]]\n[[Call it off->Admitting Defeat]]",
+        "links": [
+          {
+            "name": "Continue the fight",
+            "link": "Red Handed",
+            "pid": "23"
+          },
+          {
+            "name": "Call it off",
+            "link": "Admitting Defeat",
+            "pid": "24"
+          }
+        ],
+        "name": "Sparring Practice",
+        "pid": "21",
+        "position": {
+          "x": "124",
+          "y": "1528"
+        }
+      },
+      {
+        "text": "You decline the guard's invitation, saying that you need to go start your patrol shift. She seems dissapointed, but lets you leave without asking any questions.\n\n[[Leave the armory->On Patrol]] ",
+        "links": [
+          {
+            "name": "Leave the armory",
+            "link": "On Patrol",
+            "pid": "20"
+          }
+        ],
+        "name": "Low Profile",
+        "pid": "22",
+        "position": {
+          "x": "295",
+          "y": "1521"
+        }
+      },
+      {
+        "text": "You get back up, claiming that you were going easy on her and that the real fight is about to begin. You exchange a few more blows - with you absorbing all of hers, and her blocking all of yours - until finally your sword makes contact with her cheek. \n\nImmediately, her cheek begins to bleed and she drops her sword to put pressure on the wound. She becomes visibly upset and asks you why you were using a real sword instead of a dulled training sword. You shrug and say that you didn't know.\n\nShe runs off to go get medical treatment, and within minutes the entire castle is on high alert looking for an impostor guard. Soon after, you are found, placed in prison, and executed a few days later.\n\nYou lose!\n\n[[Try again->Dungeon]] ",
+        "links": [
+          {
+            "name": "Try again",
+            "link": "Dungeon",
+            "pid": "1"
+          }
+        ],
+        "name": "Red Handed",
+        "pid": "23",
+        "position": {
+          "x": "49",
+          "y": "1678"
+        }
+      },
+      {
+        "text": "You admit defeat, to which the guard laughs and asks if you are a new hire. You tell her that you are brand new, and she kindly offers to give you some pointers with your sword technique. She spends the next few minutes teaching you some moves before letting you go on your way.\n\n[[Leave the armory->On Patrol]] ",
+        "links": [
+          {
+            "name": "Leave the armory",
+            "link": "On Patrol",
+            "pid": "20"
+          }
+        ],
+        "name": "Admitting Defeat",
+        "score": 50,
+        "pid": "24",
+        "position": {
+          "x": "239",
+          "y": "1682"
+        }
+      },
+      {
+        "text": "You enter into a massive room with a huge dining table in the middle. The table is lined with wooden chairs, with an extravagant throne at the head. \n\nIn addition to the archway behind you, there are three doors in banquet hall: one to the left of the table, one to the right, and one behind it. You wonder if any of them will provide an easy means of escape, but each door has a guard standing on either side of it, so you best not investigate for too long lest they become suspicious.\n\n[[Go through the left door->Throne Room]]\n[[Go through the right door->Kitchen]]\n[[Go through the door behind the table->Locked out]]",
+        "links": [
+          {
+            "name": "Go through the left door",
+            "link": "Throne Room",
+            "pid": "26"
+          },
+          {
+            "name": "Go through the right door",
+            "link": "Kitchen",
+            "pid": "27"
+          },
+          {
+            "name": "Go through the door behind the table",
+            "link": "Locked out",
+            "pid": "30"
+          }
+        ],
+        "name": "Fit for a King",
+        "pid": "25",
+        "position": {
+          "x": "565",
+          "y": "1551"
+        }
+      },
+      {
+        "text": "You take the door on the left and are met with a grand sight: the throne room. In front of you and to your right is the King, sitting on his golden, jewel-encrusted throne. The entire room is lavishly decorated with paintings, expensive rugs, and intricate statues. Guards are positioned every few feet. There is a staircase at the end of the room leading upwards to what you assume are living quarters, and a hallway behind the throne that appears to lead deeper into the castle.\n\nWhat catches your interest, though, is a large set of doors directly across from the throne that appears to be the main entrance and exit.\n\n[[Go back to the banquet hall->Fit for a King]] \n[[Go through the doors->Freedom!]]\n[[Attack the King->Foiled once again]]",
+        "links": [
+          {
+            "name": "Go back to the banquet hall",
+            "link": "Fit for a King",
+            "pid": "25"
+          },
+          {
+            "name": "Go through the doors",
+            "link": "Freedom!",
+            "pid": "28"
+          },
+          {
+            "name": "Attack the King",
+            "link": "Foiled once again",
+            "pid": "29"
+          }
+        ],
+        "name": "Throne Room",
+        "pid": "26",
+        "position": {
+          "x": "457",
+          "y": "1701"
+        }
+      },
+      {
+        "text": "You enter the door to the right and find yourself in a crowded kitchen. The room is filled with interesting and delicious smells as well as stressed-looking chefs preparing food. One of the chefs looks up and asks if he can help you.\n\n[[Say that you are checking the status of the King's dinner->Free Sample]]\n[[Go back to the banquet hall->Fit for a King]]",
+        "links": [
+          {
+            "name": "Say that you are checking the status of the King's dinner",
+            "link": "Free Sample",
+            "pid": "31"
+          },
+          {
+            "name": "Go back to the banquet hall",
+            "link": "Fit for a King",
+            "pid": "25"
+          }
+        ],
+        "name": "Kitchen",
+        "pid": "27",
+        "position": {
+          "x": "732",
+          "y": "1704"
+        }
+      },
+      {
+        "text": "You walk toward the main doors in the most guard-like manner you know how, and exit the castle. Sure enough, you find yourself outside. All you need to do now is keep a low profile until you exit the city.\n\nYou walk out of the center of the city toward the outskirts, then eventually out of the walls entirely. Before long, the city is entirely out of view and you are ready to begin your life as an outlaw.\n\nYou win!\n\n[[Play again->Dungeon]] ",
         "links": [
           {
             "name": "Play again",
@@ -177,11 +557,164 @@
             "pid": "1"
           }
         ],
-        "name": "Out of the Frying Pan",
-        "pid": "9",
+        "name": "Freedom!",
+        "score": 100,
+        "pid": "28",
         "position": {
-          "x": "360",
-          "y": "621"
+          "x": "312",
+          "y": "1848"
+        }
+      },
+      {
+        "text": "You draw your sword and begin charging toward the King. However, you don't make it more than a few steps before you are stopped by the many guards in the room. They throw you back in your cell, and you are executed soon after for you crimes.\n\nYou lose!\n\n[[Try again->Dungeon]] ",
+        "links": [
+          {
+            "name": "Try again",
+            "link": "Dungeon",
+            "pid": "1"
+          }
+        ],
+        "name": "Foiled once again",
+        "pid": "29",
+        "position": {
+          "x": "440",
+          "y": "1849"
+        }
+      },
+      {
+        "text": "You jiggle the doorknob on the door behind the dining table, only to find that it is locked. The guards on either side of the door look at you suspiciously and ask you what you're doing. Panicked, you search for some excuse, but it's no use. The guards quickly realize what's going on and throw you back in your cell. You are executed for your crimes shortly after.\n\nYou lose!\n\n[[Try again->Dungeon]] ",
+        "links": [
+          {
+            "name": "Try again",
+            "link": "Dungeon",
+            "pid": "1"
+          }
+        ],
+        "name": "Locked out",
+        "pid": "30",
+        "position": {
+          "x": "605",
+          "y": "1703"
+        }
+      },
+      {
+        "text": "The chef tells you that the dinner is almost ready and apologizes for the delay. He explains that the sauce they've made seems to be missing an ingredient, but none of the chefs can figure out what it is. He asks you to sample the sauce to see if you can tell what needs to be added.\n\n[[Agree to taste the sauce->A Sweet Realization]]\n[[Say you don't have time for this and leave->Fit for a King]]",
+        "links": [
+          {
+            "name": "Agree to taste the sauce",
+            "link": "A Sweet Realization",
+            "pid": "32"
+          },
+          {
+            "name": "Say you don't have time for this and leave",
+            "link": "Fit for a King",
+            "pid": "25"
+          }
+        ],
+        "name": "Free Sample",
+        "pid": "31",
+        "position": {
+          "x": "732",
+          "y": "1854"
+        }
+      },
+      {
+        "text": "You taste the sauce and immediately realize that the flavor is lacking sweetness. You know just what the chefs should add.\n\n[[Tell them to add sugar->The Perfect Sauce]]\n[[Tell them to add pieces of dried fruit->A Fruity Flavor]]\n[[Tell them to add lead->Lead the Way]]",
+        "links": [
+          {
+            "name": "Tell them to add sugar",
+            "link": "The Perfect Sauce",
+            "pid": "33"
+          },
+          {
+            "name": "Tell them to add pieces of dried fruit",
+            "link": "A Fruity Flavor",
+            "pid": "34"
+          },
+          {
+            "name": "Tell them to add lead",
+            "link": "Lead the Way",
+            "pid": "35"
+          }
+        ],
+        "name": "A Sweet Realization",
+        "pid": "32",
+        "position": {
+          "x": "732",
+          "y": "2004"
+        }
+      },
+      {
+        "text": "The chef's eyes light up and he pours a scoop of sugar in the sauce. He tastes the sauce and exclaims that it's perfect. He thanks you and bids you farewell.\n\n[[Go back->Fit for a King]] ",
+        "links": [
+          {
+            "name": "Go back",
+            "link": "Fit for a King",
+            "pid": "25"
+          }
+        ],
+        "name": "The Perfect Sauce",
+        "score": 25,
+        "pid": "33",
+        "position": {
+          "x": "582",
+          "y": "2154"
+        }
+      },
+      {
+        "text": "The chef seems surprised by your suggestion, but chops up a few figs and dates, and mixes them into the sauce. He samples the new mixture and says that he's never tasted anything like it, but the new flavor just might be the perfect compliment to the dish. He tells you that the King is going to love it, and this sauce just might become a staple of the kingdom.\n\n[[Go back->Fit for a King]]",
+        "links": [
+          {
+            "name": "Go back",
+            "link": "Fit for a King",
+            "pid": "25"
+          }
+        ],
+        "name": "A Fruity Flavor",
+        "pid": "34",
+        "score": 25,
+        "position": {
+          "x": "732",
+          "y": "2154"
+        }
+      },
+      {
+        "text": "The chef is quiet for a moment as he considers your suggestion, before suddenly he looks at you and exclaims that you are a genius. He adds a handful of lead shavings to the sauce, mixes them in, and samples the sauce. He tells you that the subtle sweetness of the lead in addition to its metallic taste transforms the sauce into a groundbreaking culinary experience.\n\nHe begs you to become a chef in his kitchen so that he can use your insight from now on.\n\n[[Accept his job offer->A Happy Ending]]\n[[Decline his job offer and go back->Fit for a King]]",
+        "links": [
+          {
+            "name": "Accept his job offer",
+            "link": "A Happy Ending",
+            "pid": "36"
+          },
+          {
+            "name": "Decline his job offer and go back",
+            "link": "Fit for a King",
+            "pid": "25"
+          }
+        ],
+        "name": "Lead the Way",
+        "score": 25,
+        "pid": "35",
+        "position": {
+          "x": "882",
+          "y": "2154"
+        }
+      },
+      {
+        "text": "The chef invites you to dinner that evening so he can introduce you to the King. Though hesitant, you agree.\n\nDuring dinner, the guard captain notices that you are not a member of his staff and demands that you explain yourself. You come clean, explaining that you are an escaped prisoner. \n\nThe guard captain calls for your execution, but the King says that he is so impressed with the sauce you helped make that he will not only pardon your crimes, but make you the head chef in his kitchen, effective immediately.\n\nYou win! Congratulations!\n\n[[Play again->Dungeon]]",
+        "links": [
+          {
+            "name": "Play again",
+            "link": "Dungeon",
+            "pid": "1"
+          }
+        ],
+        "name": "A Happy Ending",
+        "score": 100,
+        "pid": "36",
+        "position": {
+          "x": "882",
+          "y": "2304"
         }
       }
     ],
